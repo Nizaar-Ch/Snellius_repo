@@ -36,16 +36,15 @@ Example including an image:
    - **Full Venv Path:** `[Paste output of realpath]`
 
 2. **Pip Install Torch:**
-   - **Duration:** [Approximate time]
-   - **Warnings:** [Warnings about pip version/dependencies]
+   - **Duration:** `[It took about 4 minutes]`
+   - **Warnings:** `[No warings but request to update to latest version 24.3.1 -> 25.3]`
    - **Venv Size:** `[Paste output of du -sh]`
 
 3. **Mistakes/Unexpected Behavior:**
-
+`I had trouble finding the right matplotlib extension to load onto my node. Just ''matplotlib'' did not work. I had to search for the available matplotlib extension using ''avail'' and then loaded matplotlib/3.10.3-gfbf-2025a. After which i could still not import it into my python environment, so i decided to pip install it`
 4. **Verification:**
-   - **Output:** `[Paste output of python -c command]`
-   - **Explanation:** [Why is CUDA False on a login node?]
-
+   - **Output:** `[PyTorch: 2.9.1+cu128 /nl CUDA available: False]`
+   - **Explanation:** `[CUDA is the software to run GPUs with, so it returns false because the login node does not offer GPU resources?]`
 ---
 
 ## Question 3: Version Control Setup
