@@ -15,7 +15,7 @@ Example including an image:
 
 ## Question 1: First Contact with Snellius
 1. **Connection Details:**
-   - **Command:** `[ssh scux2259@snellius.surf.nl]`
+   - **Command:** `[ssh scur2259@snellius.surf.nl]`
    - **Login Node:**  `[int5]`
    - **Screenshot:** `[link]`
 
@@ -24,7 +24,7 @@ Example including an image:
    - **Resolution:** `[Typing proper password]`
 
 3. **Smooth Connection (If applicable):**
-   - **SSH Client:** [e.g., OpenSSH v9.2]
+   - **SSH Client:** `[OpenSSH_8.9p1]`
    - **Prior Experience:** `Webtech Project requirde ssh use for git`
    - **Preemptive Steps:** `[None]`
 
