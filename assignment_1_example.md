@@ -44,16 +44,36 @@ Example including an image:
 `I had trouble finding the right matplotlib extension to load onto my node. Just ''matplotlib'' did not work. I had to search for the available matplotlib extension using ''avail'' and then loaded matplotlib/3.10.3-gfbf-2025a. After which i could still not import it into my python environment, so i decided to pip install it`
 4. **Verification:**
    - **Output:** `[PyTorch: 2.9.1+cu128 /nl CUDA available: False]`
-   - **Explanation:** `[CUDA is the software to run GPUs with, so it returns false because the login node does not offer GPU resources?]`
+   - **Explanation:** `[CUDA is the software to run GPUs with, so it returns false because the login node does not offer GPU resources]`
 ---
 
 ## Question 3: Version Control Setup
-1. **GitHub URL:** [Link]
-2. **Authentication:** [HTTPS/SSH/CLI] + [Errors encountered]
+1. **GitHub URL:** [https://github.com/Nizaar-Ch/Snellius_test_repo]
+2. **Authentication:** [SSH] + `[I had an error for the ssh key that was not yet installed on the node but had to be added to my git account as well. git@github.com: Permission denied (publickey). fatal: Could not read from remote repository. Please make sure you have the correct access rights]`
 3. **.gitignore:**
-   - **Contents:** [Paste code block]
-   - **Important items to include:** [Reasoning]
+   - **Contents:** [# Python
+__pycache__/
+*.pyc
+
+# Virtual environments
+venv/
+env/
+gpu_env/
+
+# SLURM
+logs/
+*.out
+*.err
+
+# Data and models
+data/
+*.pt
+*.pth
+*.ckpt]
+
+   - **Important items to include:** `[The data and error logs as well as the py environment]`
    - **README info:** [Should Snellius access info be in README?]
+   Only the software that was used like the modules and imports, but not the steps taken to set up an account or request access to a node.
 4. **Git Log:** `[Paste output of git log --oneline]`
 
 ---
@@ -63,7 +83,7 @@ Example including an image:
 2. **Job ID & Stats:** `[Paste output of sacct command]`
 3. **Submission Problem:** [Describe error and diagnosis]
 4. **Verification:** [Proof that script ran successfully]
-5. **Login vs Batch:** [Explain the difference]
+5. **Login vs Batch:** [Explain the difference] 
 6. **Why Clusters?:** 
 ---
 
