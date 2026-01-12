@@ -5,7 +5,7 @@
 * **Name:** `[Nizaar Cherdud Amri]`
 * **Student ID:** [1778118]
 * **TA Name:** `[Darius Barsony]`
-* **GitHub Repository:** [Link to your repository]
+* **GitHub Repository:** [[Link to your repository](https://github.com/Nizaar-Ch/Snellius_test_repo)]
 * **Base Skeleton Used:** [https://github.com/SURF-ML/MLOps_2026/tree/main](https://github.com/SURF-ML/MLOps_2026/tree/main)
 
 ---
