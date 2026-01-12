@@ -11,6 +11,12 @@
 ---
 Example including an image:
 ![PCAM](assets/pcam.jpg)
+![joberrors](assets/job_errors.png)
+![joboutputs](assets/job_output.png)
+![login](assets/snellius_login.png)
+![jobtracing](assets/sque_sacct_jobtracing.png)
+![pytest](assets/test_imports_success)
+
 ---
 
 ## Question 1: First Contact with Snellius
