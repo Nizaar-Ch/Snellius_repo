@@ -119,9 +119,18 @@ Randomness: generally always there, but ensure to use similar seeds for randommi
 ---
 
 ## Question 6: Package Integrity
-1. **ModuleNotFoundError:** [Describe any PYTHONPATH or __init__.py issues]
-2. **Import Abstraction:** [Why import from ml_core.data vs ml_core.data.pcam?]
-3. **Pytest Result:** `[Paste output of pytest tests/test_imports.py]`
+1. **ModuleNotFoundError:** [I did not have torch and torchvision installed in the isolated environment when a i ran the command. After installing manually with pip, i found out i needed to install the requirements.txt]
+2. **Import Abstraction:** [It is less prone to detailed updates, meaning the code still works if the datafile name inside of the folder is changed. Also, it is more readable.]
+3. **Pytest Result:** `[
+=================================================================================================================== test session starts=====================================================================================================================
+platform linux -- Python 3.9.21, pytest-8.4.2, pluggy-1.6.0
+rootdir: /gpfs/home4/scur2259/question6/MLOps_2026
+configfile: pyproject.toml
+collected 1 item
+
+tests/test_imports.py .                                                                                                                                                                                                                              [100%]
+
+==================================================================================================================== 1 passed in 10.36s ====================================================================================================================]`
 
 ---
 
