@@ -51,40 +51,55 @@ Example including an image:
 1. **GitHub URL:** [https://github.com/Nizaar-Ch/Snellius_test_repo]
 2. **Authentication:** [SSH] + `[I had an error for the ssh key that was not yet installed on the node but had to be added to my git account as well. git@github.com: Permission denied (publickey). fatal: Could not read from remote repository. Please make sure you have the correct access rights]`
 3. **.gitignore:**
-   - **Contents:** [# Python
-__pycache__/
+   - **Contents:** 
+   
+[# Python
+`__pycache__`/
 *.pyc
 
-# Virtual environments
+[# Virtual environments]
 venv/
 env/
 gpu_env/
 
-# SLURM
+[# SLURM]
 logs/
 *.out
 *.err
 
-# Data and models
+[# Data and models]
 data/
 *.pt
 *.pth
 *.ckpt]
 
    - **Important items to include:** `[The data and error logs as well as the py environment]`
-   - **README info:** [Should Snellius access info be in README?]
-   Only the software that was used like the modules and imports, but not the steps taken to set up an account or request access to a node.
-4. **Git Log:** `[Paste output of git log --oneline]`
+   - **README info:**
+  [ Only the software that was used like the modules and imports, but not the steps taken to set up an account or request access to a node.]
+4. **Git Log:** `[85a4a78 (HEAD -> main, origin/main) assignment_1_example.md
+3158007 assignment_1_example.md
+84075f6 assignment_1_example.md
+2617de4 assignment_1_example.md
+70a60ba assignment_1_example.md]`
 
 ---
 
 ## Question 4: Your First Batch Job (Slurm)
-1. **Files Provided:** [List your .sh, .py, and output.txt files included in zip]
-2. **Job ID & Stats:** `[Paste output of sacct command]`
-3. **Submission Problem:** [Describe error and diagnosis]
+1. **Files Provided:** [job.sh, question4.py, ~/logs/..]
+2. **Job ID & Stats:** `
+[JobID                      Start                 End    Elapsed      State
+------------ ------------------- ------------------- ---------- ----------
+18264277     2026-01-12T19:00:08 2026-01-12T19:00:31   00:00:23  COMPLETED
+18264277.ba+ 2026-01-12T19:00:08 2026-01-12T19:00:31   00:00:23  COMPLETED
+18264277.ex+ 2026-01-12T19:00:08 2026-01-12T19:00:31   00:00:23  COMPLETED]`
+
+3. **Submission Problem:** [At first i used the wrong partition name: gpu instead of gpu_a100. 
+Error:  sbatch: error: Batch job submission failed: Invalid partition name specified
+Solution: I searched for correct partition names using the sinfo command]
+
 4. **Verification:** [Proof that script ran successfully]
-5. **Login vs Batch:** [Explain the difference] 
-6. **Why Clusters?:** 
+5. **Login vs Batch:** [The main difference is that a login node does not grant access to a gpu to compute heavier tasks. And that those recources need to be requested manually] 
+6. **Why Clusters?:**  [A cluster gives the capacity to do multiple computations in parallel, which is usefull for data science when a large amount of matrix multiplication need to be done]
 ---
 
 ## Question 5: Reflection & Conceptual Understanding
