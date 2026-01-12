@@ -104,11 +104,17 @@ Solution: I searched for correct partition names using the sinfo command]
 
 ## Question 5: Reflection & Conceptual Understanding
 1. **The Filesystem:**
-   - **I/O Performance:** [Why 100k small files are bad]
-   - **Mitigation Strategies:** [Strategy 1] and [Strategy 2]
-   - **Dataset Versioning:** [How to handle GB/PB datasets]
-2. **Reproducibility:** [3 specific causes of different results + MLOps fixes]
-3. **Conda vs venv vs uv:** [Pros/Cons of each for Snellius]
+   - **I/O Performance:** [For each file, there are specific operations that need to be done to store data. Meaning that the time complexity is not linear for just the amount of data, but also for the amount of files. ]
+   - **Mitigation Strategies:** [Merging small files into one big file] and [Storing files locally on a node to avoid the spread filing system that's optimized for large files]
+   - **Dataset Versioning:** [That would require a stored record of dataset versions on the snellius storage system, where every new dataset is a deepcopy of the previous one on a different path.]
+2. **Reproducibility:** [Different software used (modules python version etc.), different recourse requests (SLURM job partitions etc.), randomness + MLOps fixes]
+Software: keep track of required modules and imports in README.md.
+Recources: keep track of SLURM requests, make sure all are mimicked in an exact manner.
+Randomness: generally always there, but ensure to use similar seeds for randommized procedures.
+3. **Conda vs venv vs uv:** [environments, Pro's, Con's]
+[Conda: easy local development, has its own module system]
+[Venv: compatible with Snellius module system, not compatible with CUDA]
+[uv: light program, so new it has little documentation]
 
 ---
 
