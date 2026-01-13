@@ -38,13 +38,13 @@ Example including an image:
 1. **Setup Sequence:**
    - **Commands:** [Paste output of history]
    ![login](assets/snellius_login.png)
-   
-   - **Full Venv Path:** `[Paste output of realpath]`
+
+   - **Full Venv Path:** `[/usr/bin/python]`
 
 2. **Pip Install Torch:**
    - **Duration:** `[It took about 4 minutes]`
    - **Warnings:** `[No warings but request to update to latest version 24.3.1 -> 25.3]`
-   - **Venv Size:** `[Paste output of du -sh]`
+   - **Venv Size:** `[19G     .]`
 
 3. **Mistakes/Unexpected Behavior:**
 `I had trouble finding the right matplotlib extension to load onto my node. Just ''matplotlib'' did not work. I had to search for the available matplotlib extension using ''avail'' and then loaded matplotlib/3.10.3-gfbf-2025a. After which i could still not import it into my python environment, so i decided to pip install it`
