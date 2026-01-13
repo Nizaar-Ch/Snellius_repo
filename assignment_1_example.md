@@ -11,10 +11,7 @@
 ---
 Example including an image:
 ![PCAM](assets/pcam.jpg)
-![joberrors](assets/job_errors.png)
-![joboutputs](assets/job_output.png)
-![login](assets/snellius_login.png)
-![jobtracing](assets/sque_sacct_jobtracing.png)
+
 ![pytest](assets/test_imports_success.png)
 ![environmentsetup](assets/environment_setup_history.png)
 
@@ -40,6 +37,8 @@ Example including an image:
 ## Question 2: Environment Setup
 1. **Setup Sequence:**
    - **Commands:** [Paste output of history]
+   ![login](assets/snellius_login.png)
+   
    - **Full Venv Path:** `[Paste output of realpath]`
 
 2. **Pip Install Torch:**
@@ -92,7 +91,10 @@ data/
 ---
 
 ## Question 4: Your First Batch Job (Slurm)
-1. **Files Provided:** [job.sh, question4.py, ~/logs/..]
+1. **Files Provided:** [job.sh: on [https://github.com/Nizaar-Ch/Snellius_test_repo/blob/main/job.sh](https://github.com/Nizaar-Ch/Snellius_test_repo/blob/main/job.sh)]
+![joberrors](assets/job_errors.png)
+![joboutputs](assets/job_output.png)
+
 2. **Job ID & Stats:** `
 [JobID                      Start                 End    Elapsed      State
 ------------ ------------------- ------------------- ---------- ----------
@@ -105,6 +107,8 @@ Error:  sbatch: error: Batch job submission failed: Invalid partition name speci
 Solution: I searched for correct partition names using the sinfo command]
 
 4. **Verification:** [Proof that script ran successfully]
+![jobtracing](assets/sque_sacct_jobtracing.png)
+
 5. **Login vs Batch:** [The main difference is that a login node does not grant access to a gpu to compute heavier tasks. And that those recources need to be requested manually] 
 6. **Why Clusters?:**  [A cluster gives the capacity to do multiple computations in parallel, which is usefull for data science when a large amount of matrix multiplication need to be done]
 ---
