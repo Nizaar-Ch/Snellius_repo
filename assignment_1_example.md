@@ -5,7 +5,7 @@
 * **Name:** `[Nizaar Cherdud Amri]`
 * **Student ID:** [1778118]
 * **TA Name:** `[Darius Barsony]`
-* **GitHub Repository:** [[Link to your repository](https://github.com/Nizaar-Ch/Snellius_test_repo)]
+* **GitHub Repository:** [https://github.com/Nizaar-Ch/Snellius_test_repo](https://github.com/Nizaar-Ch/Snellius_test_repo)
 * **Base Skeleton Used:** [https://github.com/SURF-ML/MLOps_2026/tree/main](https://github.com/SURF-ML/MLOps_2026/tree/main)
 
 ---
@@ -15,7 +15,8 @@ Example including an image:
 ![joboutputs](assets/job_output.png)
 ![login](assets/snellius_login.png)
 ![jobtracing](assets/sque_sacct_jobtracing.png)
-![pytest](assets/test_imports_success)
+![pytest](assets/test_imports_success.png)
+![environmentsetup](assets/environment_setup_history.png)
 
 ---
 
